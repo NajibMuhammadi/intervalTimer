@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "Righteous", sans-serif;
+}
+.loading__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.loading__logo{
+    cursor: pointer;
+}
+.loading__title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 7px;
+   
+}
+.loading__subtitle{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 5px;
+}

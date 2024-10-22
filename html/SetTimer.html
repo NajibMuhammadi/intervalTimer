@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timer</title>
+    <link href="../style/setTimer.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" id="menu-toggle" class="header__toggle-checkbox">
+        <label for="menu-toggle" class="header__toggle">
+            <img class="header__toggle-menu" src="../assets/navicon.svg" alt="menu-icon">
+        </label>
+        <nav class="header__nav">   
+            <ul class="header__nav-list">
+                <li class="header__nav-item" id="setTimerLink">Set timer</li>
+                <li class="header__nav-item" id="analogLink">Analog Timer</li>
+                <li class="header__nav-item" id="digitalLink">Digital Timer</li>
+                <li class="header__nav-item" id="textLink">Text Timer</li>
+            </ul>
+        </nav>
+    </header>
+   
+    <div class="countdown__container" id="countdownContainer">
+        <section class="countdown" id="countdown">
+            <button class="decrease"> < </button>
+            <article class="timeSelection">
+                <span class="minutes">10</span>
+                <span class="minutesTitle">Minut</span>
+            </article>
+            <button class="increase"> > </button>
+        </section>
+        <section class="intervals__containter">
+            <article class="interval">
+                <input type="checkbox" id="intervals" name="intervals" class="intervals__checkbox" />
+                <label for="intervals" class="intervals__label">Intervals</label>
+            </article>
+            <article class="interval__break">
+                <input type="checkbox" id="break" name="break"  class="break__checkbox" />
+                <label for="break" class="break__label">5 min break / interval</label>
+            </article>
+            <button id="startTimerBtn" class="startBtn">
+                Start
+            </button>
+    </div>
+        </section>
+        
+        <div class="digital__container" id="digital" style="display: none;">
+            <h1 class="title">Interval</h1>
+            <div class="digital__center">
+                <section class="digital__content" id="minutes">
+                    <article class="hour" id="digital-timer-display">00:00</article>
+                </section>
+                <a href="SetTimer.html" class="link">
+                    <button class="btn">Abort Timer</button>
+                </a>
+            </div>
+        </div>
+    <div class="analog" id="analog" style="display: none;">
+        <h1 class="title"> Interval</h1>
+        <section class="analog__container">
+            <article class="analog__content">
+                <div class="analog__clock">
+                    <div class="tick" style="transform: rotate(0deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(6deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(12deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(18deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(24deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(30deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(36deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(42deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(48deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(54deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(60deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(66deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(72deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(78deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(84deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(90deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(96deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(102deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(108deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(114deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(120deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(126deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(132deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(138deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(144deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(150deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(156deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(162deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(168deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(174deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(180deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(186deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(192deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(198deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(204deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(210deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(216deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(222deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(228deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(234deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(240deg) translate(150px);"></div>    
+                    <div class="tick" style="transform: rotate(246deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(252deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(258deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(264deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(270deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(276deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(282deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(288deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(294deg) translate(150px);"></div>    
+                    <div class="tick" style="transform: rotate(300deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(306deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(312deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(318deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(324deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(330deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(336deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(342deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(348deg) translate(150px);"></div>
+                    <div class="tick" style="transform: rotate(354deg) translate(150px);"></div>
+
+                    <div class="clock hour__clock"></div>
+                    <div class="clock minute__clock"></div>
+                    <div class="clock second__clock"></div>
+                </div>
+            </article>
+            <a href="SetTimer.html" class="link">
+                <button class="btn">Abort Timer</button>
+            </a>
+        </section>
+    </div>
+    <div class="text__container" id="text__container" style="display: none;">
+        <h1 class="title">Interval</h1>
+        <div class="text__content">
+            <section class="text__timer">
+                <div class="text__minute" id="timer">sju mintuer</div>
+            </section>
+            <a href="SetTimer.html" class="link">
+                <button class="btn">Abort Timer</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/easytimer.js@4.4.0/dist/easytimer.min.js"></script> 
+    <script src="../app/Digital.js"></script> 
+</script>
+</body>
+</html>
